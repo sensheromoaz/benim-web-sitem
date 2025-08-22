@@ -1,0 +1,255 @@
+<SKIPPED_HTML_EDIT_MODE></SKIPPED_HTML_EDIT_MODE>
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortast | Lojistik ve Nakliye Çözümleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        
+        .navbar-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tracking-bar {
+            background: linear-gradient(90deg, #10b981, #22c55e, #16a34a);
+            background-size: 200% 100%;
+            animation: gradientMove 3s ease-in-out infinite;
+        }
+        
+        @keyframes gradientMove {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .service-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="navbar-gradient text-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="https://placehold.co/50x50" alt="Mortast Logo - Mavi ve gri tonlarda modern lojistik firması logosu" class="h-12 w-12 rounded-lg">
+                    <span class="text-2xl font-bold">MORTAST</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#anasayfa" class="hover:text-blue-200 transition-colors">Anasayfa</a>
+                    <a href="#hizmetler" class="hover:text-blue-200 transition-colors">Hizmetler</a>
+                    <a href="#neden-biz" class="hover:text-blue-200 transition-colors">Neden Biz?</a>
+                    <a href="#iletisim" class="hover:text-blue-200 transition-colors">İletişim</a>
+                    <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+                        Hemen Başla
+                    </button>
+                </div>
+                
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero-gradient text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                        Lojistikte 
+                        <span class="text-blue-200">Yeni Standart</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        Türkiye'nin her noktasına hızlı, güvenilir ve profesyonel nakliye hizmeti. Eşyalarınız bizim için değerlidir.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors">
+                            Ücretsiz Teklif Al
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+                            Hizmetlerimiz
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://placehold.co/600x400" alt="Modern kamyon filosu ile şehirler arası nakliye hizmeti gösterimi" class="rounded-xl shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">5000+</div>
+                            <div class="text-gray-600">Mutlu Müşteri</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Neden Mortast'ı Seçmelisiniz?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Modern çözümlerimiz ve deneyimli ekibimizle lojistik ihtiyaçlarınız için en iyi hizmeti sunuyoruz</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card bg-gray-50 p-8 rounded-xl text-center transition-all">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Hızlı Teslimat</h3>
+                    <p class="text-gray-600">Siparişleriniz en kısa sürede, zamanında teslimat garantisi</p>
+                </div>
+                
+                <div class="feature-card bg-gray-50 p-8 rounded-xl text-center transition-all">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Güvenli Nakliye</h3>
+                    <p class="text-gray-600">Eşyalarınız özenle paketlenir ve güvenle taşınır</p>
+                </div>
+                
+                <div class="feature-card bg-gray-50 p-8 rounded-xl text-center transition-all">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">7/24 Destek</h3>
+                    <p class="text-gray-600">Müşteri temsilcilerimiz her zaman yanınızda</p>
+                </div>
+                
+                <div class="feature-card bg-gray-50 p-8 rounded-xl text-center transition-all">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Takip Sistemi</h3>
+                    <p class="text-gray-600">Anlık kargo takibi ile her adımı takip edin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Hizmetlerimiz</h2>
+                <p class="text-xl text-gray-600">İhtiyacınıza özel çözümler sunuyoruz</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-xl">
+                    <img src="https://placehold.co/400x250" alt="Evden eve nakliye hizmeti - Profesyonel taşıma ekibi" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-4">Evden Eve Nakliye</h3>
+                    <p class="text-gray-600 mb-6">Eşyalarınızı özenle paketleyip, güvenli bir şekilde yeni adresinize taşıyoruz.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Profesyonel paketleme
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Sigortalı taşıma
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Montaj & demontej
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Detaylı Bilgi
+                    </button>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-xl">
+                    <img src="https://placehold.co/400x250" alt="Kurumsal lojistik çözümleri - Depolama ve dağıtım" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-4">Kurumsal Lojistik</h3>
+                    <p class="text-gray-600 mb-6">Şirketiniz için özelleştirilmiş lojistik çözümleri ve tedarik zinciri yönetimi.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Depolama çözümleri
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Dağıtım ağı
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Özel çözümler
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Detaylı Bilgi
+                    </button>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-xl">
+                    <img src="https://placehold.co/400x250" alt="Özel teslimat hizmetleri - Hızlı kurye ve paket servisi" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-4">Özel Teslimat</h3>
+                    <p class="text-gray-600 mb-6">Acil ve özel teslimat ihtiyaçlarınız için hızlı ve güvenilir çözümler.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Express kurye
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Soğuk zincir
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></p
